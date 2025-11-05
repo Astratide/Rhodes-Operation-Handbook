@@ -1,0 +1,112 @@
+﻿帮我按照要求将html内容转化为标签串，严格按照我提供的要求。
+参考下述格式：
+<tr spell="法术名以及英文名" tags = "学派 环阶 职业 言语 姿势 材料 仪式 专注 来源缩写">
+
+举例来说，如果我提供的资料内是这么写的 
+<br>
+<h5 id="火球术">火球术｜Fireball</h5>
+<p class="grey">三环 塑能（仪式；术士、法师）</p>
+<p><b>出处：</b>《元素法术书（The Elemental Spellbook）》</p>
+<p><b>施法时间：</b>动作</p>
+<p><b>施法距离：</b>150尺</p>
+<p><b>法术成分：</b>V</p>
+<p><b>持续时间：</b>立即</p>
+<p class="indent">明亮的闪光从你的指间飞驰向施法距离内你指定的一点，并随着一声低吼迸成一片烈焰。目标点周围半径20尺球状区域内的每个生物必须进行一次敏捷豁免。豁免失败者将受到8d6点火焰伤害，豁免成功则伤害减半。
+区域内所有未被着装或携带的可燃物件会开始燃烧。</p>
+<p class="indent">区域内所有未被着装或携带的可燃物件会开始燃烧。</p>
+<p><b>升环施法效应：</b>使用的法术位每比三环高一环，此伤害就增加1d6。</p>
+<br>
+<br>
+<h5 id="水下呼吸">水下呼吸｜Water Breathing</h5>
+<p class="grey">三环 变化（德鲁伊、游侠、术士、法师）</p>
+<p><b>出处：</b>《基布尔的通用元素法术（Kibble's Generic Elemental Spells）》</p>
+<p><b>施法时间：</b>动作或仪式</p>
+<p><b>施法距离：</b>150尺</p>
+<p><b>法术成分：</b>V、S、M（一根短芦苇）</p>
+<p><b>持续时间：</b>专注，至多10分钟</p>
+<p class="indent">明亮的闪光从你的指间飞驰向施法距离内你指定的一点，并随着一声低吼迸成一片烈焰。目标点周围半径20尺球状区域内的每个生物必须进行一次敏捷豁免。豁免失败者将受到8d6点火焰伤害，豁免成功则伤害减半。
+区域内所有未被着装或携带的可燃物件会开始燃烧。</p>
+<p class="indent">区域内所有未被着装或携带的可燃物件会开始燃烧。</p>
+<p><b>升环施法效应：</b>使用的法术位每比三环高一环，此伤害就增加1d6。</p>
+<br>
+
+那么我需要你帮我将其转化为下述标签：
+
+<tr spell="火球术Fire Ball" tags = "塑能 三环 术师 法师 言语 ES">
+<tr spell="水下呼吸Water Breathing" tags = "变化 三环 德鲁伊 游侠 术师 法师 言语 姿势 材料 仪式 专注 KGE">
+
+
+值得注意下述的店：
+转化规律总结
+spell 属性
+格式：法术中文名 + 英文名
+例如：<tr spell="火球术Fireball">
+tags 属性
+按顺序拼接以下字段，空格分隔：
+学派（如：塑能、变化、咒法）
+环阶（如：一环、三环）
+职业（如：德鲁伊、游侠、术士、法师）
+成分（V=言语，S=姿势，M=材料）
+是否仪式（如果施法时间包含“仪式” → 加上“仪式”）
+是否专注（如果持续时间包含“专注” → 加上“专注”）
+来源缩写（出处转缩写，如：The Elemental Spellbook → ES，Kibble's Generic Elemental Spells → KGE）
+
+成分映射
+V → 言语
+S → 姿势
+M → 材料
+
+来源缩写规则
+译名对照：
+Rhodes Operation Handbook 罗德岛外勤指南=ROH
+Arknights 5e 1st Edition 明日方舟5E1st=AK5e
+The Elemental Spellbook 元素法术书=ES
+Kibble's Generic Elemental Spells 基布尔的通用元素法术=KGE
+Deep Magic 2 深层魔法2=DM2
+GM Binder=GMB
+Druid's Exclusive Spells 德鲁伊的专属法术=DES
+Ranger's Exclusive Spells 圣武士的专属法术=PES
+Paladin's Exclusive Spells 游侠的专属法术=RES
+The Illrigger 邪狱使=ILL
+The Witch 女巫=WIT
+Codex of Waves 波涛志=COW
+Pirate Campaign Compendium 海盗战役集=PCC
+Ultimate Adventurer's Handbook 究极冒险者手册=UAH
+Book of Ebon Tides 黯潮之书=BET
+
+分析我要求中的转化规律，当你准备好转化了，告诉我
+
+2. spell 属性
+格式为：中文法术名 + 英文名
+
+3. 链接 href
+固定格式为：第五章：施法规则/1环.html#法术名
+注意：对于戏法，指向"戏法(0环).html"，对于一环或更高环阶的法术，指向"X环.html"，其中X为该法术的环阶，例如1环.html
+
+4. 表格列内容
+列名	来源字段	转化规则
+法术名	<h5>	中文法术名+英文名，使用 <spell> 标签包裹，如果来源不是（PHB24、XGE或TCE），则还需要添加<A>标签包裹， href 如上
+环阶	<p class="grey">	直接写["戏法(零环)","一环","二环","三环","四环","五环","六环","七环","八环","九环"]
+学派	<p class="grey">	法术派系，可以是[防护,咒法,预言,惑控,塑能,幻术,死灵,变化] 
+职业	<p class="grey">	将职业转为简称，[奇械师,吟游诗人,牧师,德鲁伊,圣武士,游侠,术士,法师,魔契师]，分别转为：[奇,诗,牧,德,帕,软,术,法,锁]
+言语	<p><b>法术成分</b>	包含V则写V，否则 ×
+姿势	同上	包含S则写S，否则 ×
+材料	同上	包含M则写M，否则 ×
+仪式	<p class="grey">	默认写 ×，如果<p class="grey">里面提到仪式 则写√
+专注	<p><b>持续时间</b>	默认写 ×，如果持续时间里面提到专注 则写√
+来源	<p><b>出处</b>	转为缩写：例如 ES、KGE、GMB、ROH
+
+分析我要求中的转化规律，当你准备好转化了，告诉我
+
+
+<tr spell="法师护甲Mage Armor" tags="防护 术士 法师 一环 PHB24 言语 姿势 材料 术师">
+    <td><a>法师护甲Mage Armor</A></TD>
+    <td>一环</TD>
+    <td>防护</TD>
+    <td>术 法</TD>
+    <td>V</TD>
+    <td>S</TD>
+    <td>M</TD>
+    <td>×</TD>
+    <td>×</TD>
+<td>PHB24</TD></TR>
