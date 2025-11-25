@@ -8,14 +8,15 @@
     border-radius: 10px; 
     box-sizing: border-box;
     background-color: #f8f8f6;
-    line-height: 1.5em;
+    line-height: 1.5rem;
     width: 35em;
 }
 
 .monster_container table {
     color: #642e25;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
+	margin-left: 5px;
 }
 
 .monster_container p {
@@ -47,6 +48,7 @@ table.stat{
 	width: 500px;
 	color: #642e25;
 	border-collapse: collapse;
+    border-spacing: 0 2px;
 	margin-left: 5px;
 }
 table.stat td{
