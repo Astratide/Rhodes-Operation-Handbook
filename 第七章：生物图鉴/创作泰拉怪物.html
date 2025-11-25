@@ -6,21 +6,16 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11">
 <link rel="stylesheet" href="../style.css">
   <style>
-    .toolbox {
-      max-width: 600px;
-      margin: auto;
-      background: #f8f8f8;
-      border: 2px solid #999;
-      box-shadow: 0 0 10px #aaa;
-      padding: 20px;
+    .monster_container div#stats p:first-child {
+        flex-basis: unset;
     }
 
-    .toolbox h2 {
-      text-align: center;
-      margin-bottom: 20px;
-      color: #333;
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 10px;
+    .monster_container div#stats p:nth-child(2) {
+        flex: unset;
+    }
+
+    .monster_container div#stats p:nth-child(n+3) {
+        flex-basis: unset;
     }
 
     .input-row {
