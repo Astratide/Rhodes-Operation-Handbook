@@ -46,7 +46,7 @@ table.custom-table#left th:nth-child(2) {text-align: center;}
 <p>获得特种的1级特性（见特种特性表 ）。</p>
 <br>
 <h4>特种特性表</h4>
-<table class="custom-table" id="caster" style="text-align: center; font-size: 0.9em;">
+<table class="custom-table" id="caster" style="text-align: center; font-size: 0.9em; max-width: 600px;">
   <tbody>
   <tr>
     <th><b>职业</b></th>
@@ -68,7 +68,7 @@ table.custom-table#left th:nth-child(2) {text-align: center;}
   <tr>
     <td>1st</td>
     <td>+2</td>
-    <td style="text-align: left;">特种施法，战斗风格</td>
+    <td style="text-align: left;">施法，战斗风格</td>
     <td>2</td>
     <td>2</td>
     <td>—</td>
@@ -79,7 +79,7 @@ table.custom-table#left th:nth-child(2) {text-align: center;}
   <tr>
     <td>2nd</td>
     <td>+2</td>
-    <td style="text-align: left;">特种专研，特种战技，特种回转</td>
+    <td style="text-align: left;">特种专研，战技，回转</td>
     <td>3</td>
     <td>2</td>
     <td>—</td>
@@ -329,7 +329,7 @@ table.custom-table#left th:nth-child(2) {text-align: center;}
 <h1>特种职业特性 Specialist Traits</h1>
 <hr class="sub">
 <br>
-<h3>1级：特种施法 Specialist Artcasting</h3><strong></strong>
+<h3> 1级：施法 Artcasting</h3><strong></strong>
 <p class="para">作为一名特种，你懂得如何施展法术。这是一个施法特性。你习得以下特性：</p>
 <p class="para"><b> 施法属性。</b>从智力、感知或魅力中选择一项属性，这项属性将是你施展特种法术的<b>施法属性</b>。如果你并非作为兼职角色而获得此特性，那么所选择的属性还会决定你特种职业中获得的豁免熟练以及技能、工具熟练。</p>
 <div class="syntax">
@@ -353,7 +353,7 @@ table.custom-table#left th:nth-child(2) {text-align: center;}
 <p class="para"><b>技能熟练：</b>从特技、隐匿、察觉、洞悉、欺瞒、威吓、表演或游说中选择三项。</p>
 <p class="para"><b>工具熟练：</b>从易容工具、织布工具、珠宝匠工具或一种乐器中选择一项，以及盗贼工具。</p>
 </div>
-<p class="para"><b>精通伤害。</b>你从火焰、寒冷、强酸、毒素、闪电、雷鸣伤害中选择一种伤害，该伤害视为你的 <b>精通伤害</b> ，你可以在施展法术时将法术中的所有伤害都将改为你的精通伤害。如果你施展一个可以自选伤害的法术，且可选项里面包括了你的精通伤害，则你必须选择之。</p>
+<p class="para"><b>精通伤害。</b>你从火焰、寒冷、强酸、毒素、闪电、雷鸣伤害中选择一种伤害，该伤害视为你的 <b class="green">精通伤害</b> 。</p>
 <p class="para"><b>法术表构建。</b>你将 <b>基础特种法表</b> 以及一项你选择的 <b>领域法术表</b> 加入你的职业法表。前提是你符合它们的先决条件（见第五章“<A href="../第五章：施法规则/法术表构建.html" >法术表构建</a>”）。你也可以在升级时更改自己的领域法术表。</p>
 <p class="para"><b>法术位。</b>特种特性表显示了你可用于施放1环及以上法术的法术位数量。你在完成一次长休时恢复所有已消耗的法术位。</p>
 <p class="para"><b>准备法术。</b>你需要准备才可以此特性施展任何已知的一环或以上特种法术。最初，选择两道1环特种法术准备之。特种特性表列出了你在每个等级最多可以准备的法术数量。每当你升级时，你就可以重新选择要准备的法术。你准备的法术环阶不能超过你的最大法术环阶。</p>
@@ -370,13 +370,12 @@ table.custom-table#left th:nth-child(2) {text-align: center;}
 <p class="para"><b>武器精通Weapon Mastery。</b>选择一项你熟练的武器，你获得其精通。每当你完成一次长休，你能将所选的武器种类替换为你熟练的另一种武器。</p>
 <p class="para"><b>语言专研Language Studies。</b>你习得盗贼黑话或一种自选语言。</p>
 <p class="para"><b>高速移动Speeded Moving。</b>你的步行速度增加10尺。</p>
-<p class="para"><strong>地形适应Terrain 
-Adaptation。</strong>你获得等同你步行速度一半的游泳和攀爬速度。</p>
+<p class="para"><b>地形适应Terrain Adaptation。</b>你获得等同你步行速度一半的游泳和攀爬速度。</p>
 <br>
-<h3>2级：特种战技 Specialist Battle Skills</h3>
+<h3>  2级：战技 Battleskill</h3>
 <p class="para">你习得一种名为战技的特殊能力，可以用技力（SP）来发动。</p>
-<p class="para"><b>战技Battleskills。</b>你可以消耗技力以及所描述的动作或其他资源来发动战技。你可以在之后每次获得特种等级时，给你从特种职业中习得的战技，添加或移除一项战技特效（见第二章“<A href="..\第二章：角色资源\战技.html">战技</a>”），前提是战技的技力消耗不高于你的熟练加值。</p>
-<p class="para"><b>技力Skill Point。</b>你拥有上限等同你熟练加值的技力点，可以用来发动战技。你在完成一次长休后恢复所有已消耗的技力点，并在完成一次短休后恢复等同上限一半的技力点（向下取整）。</p>
+<p class="para"><b>战技Battleskill。</b>你可以消耗技力以及所描述的动作或其他资源来发动战技。5级起，你可以在每次获得特种等级时，给你从特种职业中习得的战技，添加、替换或移除一项战技特效（见第二章“<A href="..\第二章：角色资源\战技.html">战技</a>”），前提是战技的技力消耗必须小于你的熟练加值。</p>
+<p class="para"><b>技力Skill Point。</b>你拥有上限等同你熟练加值的技力点，可以用来发动战技。你在完成一次长休后恢复所有已消耗的技力点，并在完成一次短休后恢复1点技力点。若你进行了兼职，则此熟练加值只考虑那些有战技特性的职业的等级。</p>
 <p class="para"><b>限制Limitation。</b>在战技持续期间你不能发动其他战技，你也不能同时发动两个立即战技。最后，一个战技在一回合中只能被发动一次。</p>
 <p class="para">作为特种，你在第2级时习得基础战技：特战策略。</p>
 <div class="syntax">
@@ -404,8 +403,8 @@ Adaptation。</strong>你获得等同你步行速度一半的游泳和攀爬速�
 </div>
 
 <br>
-<h3>2级：特种回转 Specialist Recovery</h3>
-<p class="para">在战斗中以一个附赠动作，你可以让自己立即恢复1点已消耗技力点。如果你这么做了，作为附赠动作的一部分，你可以立即执行一次<b class="green">躲藏</b>、<b class="green">回避</b>、<b class="green">疾走</b>或<b class="green">撤离</b>。以此恢复技力点后，你必须进行一次先攻检定才能再次使用此特质。</p>
+<h3> 2级：回转 Recovery</h3>
+<p class="para">你可以使用<b class="green">附赠动作</b>为自己恢复1点已消耗技力。如果你这么做了，作为附赠动作的一部分，你可以立即执行一次<b class="green">躲藏</b>、<b class="green">回避</b>、<b class="green">疾走</b>或<b class="green">撤离</b>。以此恢复技力点后，你必须进行一次先攻检定才能再次使用此特性。</p>
 <p class="para">你在提升到更高的特种等级时，可以以此恢复更多技力。9级起，你可以以此恢复2点技力而非1点。第17级起，你可以以此恢复3点技力。</p>
 <br>
 <h3>3级：特种子职 Specialist Subclass</h3>
