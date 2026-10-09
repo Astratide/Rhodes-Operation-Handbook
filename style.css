@@ -36,7 +36,7 @@ p.indent#grey
 }
 p.para
 {
-    text-indent: 10px;
+    text-indent: 0px;
     margin: 5px 5px;
 }
 table
@@ -71,7 +71,9 @@ h3
 }
 h4
 {
-    font-size: 105%
+    font-size: 100%;
+    text-indent: 0px;
+    margin: 5px 5px;
 }
 h5
 {
@@ -80,7 +82,7 @@ h5
 }
 h6
 {
-    font-size: 130%;
+    font-size: 120%;
     color: black;
 }
 hr
