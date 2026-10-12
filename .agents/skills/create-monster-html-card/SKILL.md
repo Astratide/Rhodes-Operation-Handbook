@@ -356,13 +356,13 @@ description: "Use when creating or editing Rhodes Operation Handbook monster HTM
 <h3>特质 Traits</h3>
 <hr>
 
-<p class="para"><b>[特质名称 English Name]。</b>[规则描述]</p>
+<p><b>[特质名称 English Name]。</b>[规则描述]</p>
 
 <br>
 <h3>动作 Actions</h3>
 <hr>
 
-<p class="para"><b>[武器或能力名称 English Name]。</b><i>近战攻击检定：</i>+[AB]，触及[距离]尺。<i>命中：</i>[平均伤害]（[伤害骰]）[伤害类型]。</p>
+<p><b>[武器或能力名称 English Name]。</b><i>近战攻击检定：</i>+[AB]，触及[距离]尺。<i>命中：</i>[平均伤害]（[伤害骰]）[伤害类型]。</p>
 ```
 
 ### 强版本
@@ -383,14 +383,14 @@ description: "Use when creating or editing Rhodes Operation Handbook monster HTM
 <h3>动作 Actions</h3>
 <hr>
 
-<p class="para"><b>多重攻击 Multiattack。</b>[怪物名]发动两次[攻击名称]攻击。</p>
-<p class="para"><b>[攻击名称 English Name]。</b><i>近战攻击检定：</i>+[AB]，触及[距离]尺。<i>命中：</i>[平均伤害]（[伤害骰]）[伤害类型]，[附加效果]。</p>
+<p><b>多重攻击 Multiattack。</b>[怪物名]发动两次[攻击名称]攻击。</p>
+<p><b>[攻击名称 English Name]。</b><i>近战攻击检定：</i>+[AB]，触及[距离]尺。<i>命中：</i>[平均伤害]（[伤害骰]）[伤害类型]，[附加效果]。</p>
 
 <br>
 <h3>附赠动作 Bonus Actions</h3>
 <hr>
 
-<p class="para"><b>[附赠动作名称 English Name]。</b>[规则描述]</p>
+<p><b>[附赠动作名称 English Name]。</b>[规则描述]</p>
 ```
 
 强版本不要只是单纯堆高数值。优先通过一个清晰机制表现其“更强”。
@@ -418,8 +418,8 @@ Boss 页面整体结构：
 <IMG style="width: auto; height: 10em; vertical-align: top;" src="[Boss头像路径]" >
 </td>
 <td>
-<p class="para"><b>[简介首句]</b>[描述]</p>
-<p class="para"><b>[机制或称号]</b>[额外描述]</p>
+<p><b>[简介首句]</b>[描述]</p>
+<p><b>[机制或称号]</b>[额外描述]</p>
 </td></tr>
 </table>
 
@@ -529,7 +529,7 @@ Boss 可能包含以下模块：
 <h3>特质 Traits</h3>
 <hr class="sub">
 
-<p class="para"><b>[特质名称 English Name]。</b>[规则描述]</p>
+<p><b>[特质名称 English Name]。</b>[规则描述]</p>
 ```
 
 Boss 特质可以包含：
@@ -548,9 +548,9 @@ Boss 特质可以包含：
 <h3>动作 Actions</h3>
 <hr class="sub">
 
-<p class="para"><b>多重攻击 Multiattack。</b>[Boss]发动若干次攻击，或将其中一次攻击替换为[其他动作]。</p>
-<p class="para"><b>[攻击名称 English Name]。</b><i>近战攻击检定：</i>+[AB]，触及[距离]尺。<i>命中：</i>[平均伤害]（[伤害骰]）[伤害类型]，[附加效果]。</p>
-<p class="para"><b>[特殊动作 English Name]（[使用次数]）。</b>[规则描述]</p>
+<p><b>多重攻击 Multiattack。</b>[Boss]发动若干次攻击，或将其中一次攻击替换为[其他动作]。</p>
+<p><b>[攻击名称 English Name]。</b><i>近战攻击检定：</i>+[AB]，触及[距离]尺。<i>命中：</i>[平均伤害]（[伤害骰]）[伤害类型]，[附加效果]。</p>
+<p><b>[特殊动作 English Name]（[使用次数]）。</b>[规则描述]</p>
 ```
 
 ### 3. 施法 Artcasting
@@ -560,7 +560,7 @@ Boss 特质可以包含：
 格式示例：
 
 ```html
-<p class="para"><b>施法 Artcasting。</b>[Boss]作为[等级]级施法者施展一道以下法术，使用[属性]作为施法属性（法术豁免 DC [DC]，法术攻击命中+[AB]）。</p>
+<p><b>施法 Artcasting。</b>[Boss]作为[等级]级施法者施展一道以下法术，使用[属性]作为施法属性（法术豁免 DC [DC]，法术攻击命中+[AB]）。</p>
 <p><i>随意：</i><b class="spell">[法术列表]</b></p>
 <p><i>每项3/日：</i><b class="spell">[法术列表]</b></p>
 <p><i>每项2/日：</i><b class="spell">[法术列表]</b></p>
@@ -574,7 +574,7 @@ Boss 特质可以包含：
 <h3>反应 Reactions</h3>
 <hr class="sub">
 
-<p class="para"><b>[反应名称 English Name]。</b><i>触发：</i>[触发条件]。<i>响应：</i>[效果]。</p>
+<p><b>[反应名称 English Name]。</b><i>触发：</i>[触发条件]。<i>响应：</i>[效果]。</p>
 ```
 
 ### 5. 传奇动作 Legendary Actions
@@ -585,7 +585,7 @@ Boss 特质可以包含：
 <hr class="sub">
 
 <p class="grey">传奇动作次数：[次数]。 [Boss]可以在另一生物的回合后立即消耗一次传奇动作来执行以下一道动作。[Boss]在其回合开始时回复所有已消耗的传奇动作次数。</p>
-<p class="para"><b>[传奇动作名称 English Name]。</b>[效果]</p>
+<p><b>[传奇动作名称 English Name]。</b>[效果]</p>
 ```
 
 一般规则：
@@ -604,7 +604,7 @@ Boss 特质可以包含：
 <hr class="sub">
 
 <p class="grey">如果[Boss]的<b>[神话特性名称]</b>特性被激活，它可以选择以下选项作为传奇动作。</p>
-<p class="para"><b>[神话动作名称 English Name]。</b>[效果]</p>
+<p><b>[神话动作名称 English Name]。</b>[效果]</p>
 ```
 
 注意：
@@ -655,25 +655,25 @@ custom-table
 攻击格式：
 
 ```html
-<p class="para"><b>[攻击名称 English Name]。</b><i>近战攻击检定：</i>+[AB]，触及[距离]尺。<i>命中：</i>[平均伤害]（[伤害骰]）[伤害类型]。</p>
+<p><b>[攻击名称 English Name]。</b><i>近战攻击检定：</i>+[AB]，触及[距离]尺。<i>命中：</i>[平均伤害]（[伤害骰]）[伤害类型]。</p>
 ```
 
 远程攻击格式：
 
 ```html
-<p class="para"><b>[攻击名称 English Name]。</b><i>远程攻击检定：</i>+[AB]，射程[距离]尺。<i>命中：</i>[平均伤害]（[伤害骰]）[伤害类型]。</p>
+<p><b>[攻击名称 English Name]。</b><i>远程攻击检定：</i>+[AB]，射程[距离]尺。<i>命中：</i>[平均伤害]（[伤害骰]）[伤害类型]。</p>
 ```
 
 豁免格式：
 
 ```html
-<p class="para"><b>[能力名称 English Name]。</b><i>[属性]豁免检定：</i>DC[DC]，[目标范围]。<i>失败：</i>[失败效果]。<i>成功：</i>[成功效果]。</p>
+<p><b>[能力名称 English Name]。</b><i>[属性]豁免检定：</i>DC[DC]，[目标范围]。<i>失败：</i>[失败效果]。<i>成功：</i>[成功效果]。</p>
 ```
 
 触发反应格式：
 
 ```html
-<p class="para"><b>[反应名称 English Name]。</b><i>触发：</i>[触发条件]。<i>响应：</i>[响应效果]。</p>
+<p><b>[反应名称 English Name]。</b><i>触发：</i>[触发条件]。<i>响应：</i>[响应效果]。</p>
 ```
 
 使用次数格式：
