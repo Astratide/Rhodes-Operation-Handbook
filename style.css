@@ -78,7 +78,7 @@ h5
 }
 h6
 {
-    font-size: 120%;
+    font-size: 130%;
     color: black;
 }
 hr
@@ -258,11 +258,11 @@ div.cost
     width: max-content;
     border-radius: 5px; 
 }
-div.cost#red
+.cost#red
 {
     background: #fc793e;
 }
-div.cost#yellow
+.cost#yellow
 {
     background: #FFB400;
 }
@@ -276,6 +276,7 @@ div.cost#yellow
     width: max-content;
     border-radius: 5px; 
 }
+
 .time
 {
     background: #545454;
@@ -298,6 +299,7 @@ img.clock
 {
     color: white;
     white-space: nowrap; 
+    margin: 2px;
 }
 .blue
 {
